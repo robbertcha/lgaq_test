@@ -7,3 +7,4 @@ Tools :
 
 
 * Screenshots are on the root directory
+* Please run 'npm install' after you clone the project into your pc
