@@ -1,0 +1,31 @@
+{
+  "name": "Identity",
+  "version": "1.0.0",
+  "description": "Frontend Test from LGAQ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twig",
+    "gulp",
+    "HTML",
+    "frontend",
+    "SCSS"
+  ],
+  "author": "Robbert Cha",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.3.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-twig": "^1.2.0",
+    "gulp-watch": "^5.0.1"
+  }
+}

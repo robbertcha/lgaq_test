@@ -1,0 +1,79 @@
+{% extends "layouts/default.twig" %}
+
+{% block content %}
+
+		<!-- ================== Block Main Top ================== -->
+		{% include 'blocks/block-main-top.twig' %}
+    
+        <div class="img_slider">
+            <img src="/assets/img/banner.jpg">
+        </div>
+
+        <section id="welcome_block" class="content-width">
+            <h1>Welcome to the homepage!</h1>
+
+            <ul class="intro_block">
+                {% include 'blocks/block-homepage-intro-1.twig'  with {'title': 'Tile Heading One', 'img':'image1.jpg'} %}
+                {% include 'blocks/block-homepage-intro-1.twig'  with {'title': 'Welcome to the homepage!', 'img':'image3.jpg'} %}
+                {% include 'blocks/block-homepage-intro-1.twig'  with {'title': 'Welcome to the homepage!', 'img':'image2.jpg'} %}
+
+                {% include 'blocks/block-homepage-intro-2.twig'  with {'title': 'Tile Heading One', 'img':'image2.jpg', 'pos': 'object-position: 0% 150%;'} %}
+                {% include 'blocks/block-homepage-intro-2.twig'  with {'title': 'Tile Heading One', 'img':'image1.jpg', 'pos': 'object-position: -50% 10%;'} %}
+                {% include 'blocks/block-homepage-intro-2.twig'  with {'title': 'Tile Heading One', 'img':'image3.jpg', 'pos': 'object-position: -40% 10%;'} %}
+            </ul>
+        </section>
+
+        <section id="summary_block" class="content-width">
+            <div class="summary_links">
+                <h4 class="summary_title">
+                    QUICKLINKS
+                    <button class="btn_collapse">
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                </h4>
+                <ul class="links">
+                    <li class="links__item">
+                        <a href="#" class="links__item-title">Link Title 1</a>
+                        <i class="fas fa-arrow-right links__item-icn"></i>
+                    </li>
+
+                    <li class="links__item">
+                        <a href="#" class="links__item-title">Link Title 2</a>
+                        <i class="fas fa-arrow-right links__item-icn"></i>
+                    </li>
+
+                    <li class="links__item">
+                        <a href="#" class="links__item-title">Link Title 3</a>
+                        <i class="fas fa-arrow-right links__item-icn"></i>
+                    </li>
+
+                    <li class="links__item">
+                        <a href="#" class="links__item-title">Link Title 4</a>
+                        <i class="fas fa-arrow-right links__item-icn"></i>
+                    </li>
+
+                    <li class="links__item">
+                        <a href="#" class="links__item-title">Link Title 5</a>
+                        <i class="fas fa-arrow-right links__item-icn"></i>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="summary_content">
+                <h2>
+                    Heading Summary
+                </h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </section>
+
+ 		<!-- ================== Block Main Bottom ================== -->
+		{% include 'blocks/block-main-bottom.twig' %}
+
+{% endblock %}
